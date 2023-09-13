@@ -1,0 +1,155 @@
+ /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a primary color for the project */
+:root {
+    --primary-color: #9766ce; 
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f8f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+}
+
+/* Style the task management section */
+.task-management {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the left section */
+.left-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Style the task lists */
+.task-list {
+    margin-top: 20px;
+}
+
+h3 {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the form elements */
+form {
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"],
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style the right section */
+.right-section {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* Style the chat section */
+.chat {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.chat-input {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#chatMessage {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#sendButton {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Footer */
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: #777;
+}
+
+/* Make links blue */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* On hover, change link color */
+a:hover {
+    color: #2574a9; /* A slightly darker shade of blue */
+}
